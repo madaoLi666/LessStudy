@@ -1,0 +1,30 @@
+#father {
+  color: black;
+}
+#father #son1 {
+  font-size: 12px;
+}
+#father #son2 {
+  width: 300px;
+}
+#father > div.son3 {
+  border: 1px black solid;
+}
+.father {
+  width: 300px;
+}
+@media (min-width: 768px) {
+  .father {
+    width: 600px;
+  }
+}
+@media (min-width: 768px) and (min-resolution: 192dpi) {
+  .father {
+    width: 1000px;
+  }
+}
+@media (min-width: 1280px) {
+  .father {
+    width: 800px;
+  }
+}
