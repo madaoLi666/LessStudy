@@ -1,0 +1,21 @@
+#father {
+  ceil: 3;
+  floor: 2;
+  percentage: 50%;
+  round: 2;
+  round-1: 1.7;
+  round-2: 1.68;
+  sqrt: 5cm;
+  abs: 18%;
+  sin: 0.01745241;
+  asin: 1.57079633rad;
+  cos: 0.9998477;
+  acos: 0rad;
+  tan: 0.01745506;
+  atan: 0.78539816rad;
+  pi: 3.14159265;
+  pow: 4;
+  mod: 3px;
+  min: 5;
+  max: 10;
+}

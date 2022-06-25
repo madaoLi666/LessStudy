@@ -1,7 +1,35 @@
 @list: black, white, green, red;
 
 #father {
-  width: length(@list);
-  color: extract(@list, 3);
-  
+  // length
+  length: length(@list);
+  extract: extract(@list, 3);
+  range: range(2);
 }
+
+// each
+
+each(@list, {
+  .sel-@{value} {
+    font: 1px;
+  }
+});
+
+.set() {
+  one: green;
+  two: red;
+  three: blue;
+}
+
+.set-2 {
+  // value, key index
+  each(.set(), .(@v, @k, @i) {
+    @{k}-@{i}: @v;
+  });
+}
+
+each(range(4), {
+  .col-@{value} {
+    height: (@value * 25%);
+  }
+})

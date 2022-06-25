@@ -1,7 +1,19 @@
+@mscode: "ms:alwaysHasItsOwnSyntax.For.Stuff()";
+
 
 #father {
   // url-encoding
-  color: escape("a=1");
-  // replace
-  border: %(replace("1px solid black", "black", "white"));
+  url: escape("a=1");
+  // String escaping
+  escaping: e(@mscode);
+  // format
+  format-a: %("FORMAT %a", 1 + 2);
+  format-d: %("FORMAT %d", "./a.less");
+  format-A: %("FORMAT %A", 1 + 2);
+  format-D: %("FORMAT %D", "./a.less");
+  format-s: %("FORMAT %s", "./a.less");
+  format-S: %("FORMAT %S", "./a.less");
+  // Replace(string, pattern, replacement, flag)
+  // flag - (Optional) regular expression flags.
+  replace: replace("replacing", "cing", "ced");
 }

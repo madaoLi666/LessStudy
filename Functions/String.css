@@ -1,4 +1,11 @@
 #father {
-  color: a%3D1;
-  border: "1px solid white";
+  url: a%3D1;
+  escaping: ms:alwaysHasItsOwnSyntax.For.Stuff();
+  format-a: "FORMAT 3";
+  format-d: "FORMAT "./a.less"";
+  format-A: "FORMAT 3";
+  format-D: "FORMAT %22.%2Fa.less%22";
+  format-s: "FORMAT ./a.less";
+  format-S: "FORMAT .%2Fa.less";
+  replace: "submitted";
 }

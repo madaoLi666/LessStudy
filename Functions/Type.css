@@ -1,0 +1,8 @@
+#father {
+  isnumber-false: false;
+  isnumber-true: true;
+  isstring-false: false;
+  isstring-true: true;
+  iscolor-false: false;
+  iscolor-true: true;
+}
